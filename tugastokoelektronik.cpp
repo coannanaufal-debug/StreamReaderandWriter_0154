@@ -94,12 +94,12 @@ void simulasiEtalase(TokoElektronik& toko) {
 }
 
 int main() {
-    TokoElektronik buahlilJaya;
+    TokoElektronik gibranJaya;
     int pilihan;
 
     do {
         tampilkanGudang(); // Otomatis tampil saat menu dibuka
-        cout << "\n=== TOKO BUAHLIL JAYA ===\n";
+        cout << "\n=== TOKO GIBRAN JAYA ===\n";
         cout << "1. Tambah Barang (Create)\n2. Update Barang (Update)\n3. Hapus Barang (Delete)\n";
         cout << "4. Simulasi Etalase (Exception)\n5. Keluar\nPilihan: ";
         cin >> pilihan;
@@ -108,7 +108,7 @@ int main() {
             case 1: tambahBarang(); break;
             case 2: updateAtauDeleteBarang(false); break; // Update
             case 3: updateAtauDeleteBarang(true); break;  // Delete
-            case 4: simulasiEtalase(buahlilJaya); break;
+            case 4: simulasiEtalase(gibranJaya); break;
             case 5: cout << "Keluar program.\n"; break;
             default: cout << "Pilihan salah!\n";
         }
